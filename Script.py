@@ -118,7 +118,7 @@ User - {}"""
 ⭐ Rating: {rating} / 10</b>
 """
 
-    FILE_CAPTION = """<b>{file_name}</b>"""
+    FILE_CAPTION = """<b> ➥ @RbyLinkzz⚡<sub>{file_name}</sub></i>\n\n<br><br></b>🔥  ↭  <b> Join Now  @RbyLinkzz  ↭ </b>"""
     
 
     ALRT_TXT = """ᴡʜᴀᴛ ᴀʀᴇ ʏᴏᴜ sᴇᴀʀᴄʜɪɴɢ !?"""
