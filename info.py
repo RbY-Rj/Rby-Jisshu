@@ -14,44 +14,44 @@ def is_enabled(value, default):
     
 # Main
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
+API_ID = int(environ.get('API_ID', '10435103'))
+API_HASH = environ.get('API_HASH', 'c1003f5d2bf7594f6977c6b80f376eb9')
 BOT_TOKEN = environ.get('BOT_TOKEN', '')
-PORT = environ.get('PORT', '8082')
+PORT = environ.get('PORT', '8080')
 
 # Owners 
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5672857559').split()]
-OWNER_USERNAME = environ.get('OWNER_USERNAME', 'IM_JISSHU') # without @ or https://t.me/ 
-USERNAME = environ.get('USERNAME', "https://t.me/IM_JISSHU") # ADMIN USERNAME
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '819119516').split()]
+OWNER_USERNAME = environ.get('OWNER_USERNAME', 'RbyAdminBot') # without @ or https://t.me/ 
+USERNAME = environ.get('USERNAME', "https://t.me/RbyAdminBot") # ADMIN USERNAME
 
 # Database Channel 
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001942980809 -1002446479008').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001522522287 -1001651501141').split()]
 
 # ForceSub Channel & Log Channels
-AUTH_CHANNEL = int(environ.get('AUTH_CHANNEL', '-1002329095900'))
-AUTH_REQ_CHANNEL = int(environ.get('AUTH_REQ_CHANNEL', '-1002329095900'))
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '')) 
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', ''))
+AUTH_CHANNEL = int(environ.get('AUTH_CHANNEL', '-1001780992747'))
+AUTH_REQ_CHANNEL = int(environ.get('AUTH_REQ_CHANNEL', '-1001780992747'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001612625783'))
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1001612625783')) 
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1001612625783'))
 
 # MongoDB 
 DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
+DATABASE_NAME = environ.get('DATABASE_NAME', "")
 
 # Files index database url
 FILES_DATABASE = environ.get('FILES_DATABASE', "")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'jisshu')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Other Channel's
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1001864434358'))
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1001805795518'))
 DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','0'))
-request_channel = environ.get('REQUEST_CHANNEL', '-1001864434358') 
+request_channel = environ.get('REQUEST_CHANNEL', '-1001805795518') 
 REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(request_channel) else None
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1001864434358')) 
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1001780992747')) 
 
 # Added Link Here Not Id 
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/Jisshu_support')
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/JisshuMovieZone')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/RbyAdminBot')
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', ' https://t.me/RbyMovieRequest/302')
 
 # Verification
 IS_VERIFY = is_enabled('IS_VERIFY', False)
@@ -75,10 +75,10 @@ YEARS = [f'{i}' for i in range(2025, 2002,-1 )]
 SEASONS = [f'season {i}'for i in range (1 , 23)]
 
 # Pictures And Reaction
-START_IMG = (environ.get('START_IMG', 'https://i.ibb.co/qpxpGmC/image.jpg https://i.ibb.co/DQ35zLZ/image.jpg')).split()
+START_IMG = (environ.get('START_IMG', 'https://telegra.ph/file/459b05de9d75612fe00aa.jpg')).split()
 FORCESUB_IMG = environ.get('FORCESUB_IMG', 'https://i.ibb.co/ZNC1Hnb/ad3f2c88a8f2.jpg')
-REFER_PICS = (environ.get("REFER_PICS", "https://envs.sh/PSI.jpg")).split() 
-PAYPICS = (environ.get('PAYPICS', 'https://graph.org/file/f4db1c3ad3d9e38b328e6.jpg')).split()
+REFER_PICS = (environ.get("REFER_PICS", "https://envs.sh/Xd7.jpg")).split() 
+PAYPICS = (environ.get('PAYPICS', 'https://envs.sh/Xd8.jpg')).split()
 SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/9f3f47c690bbcc67633c2.jpg'))
 REACTIONS = ["👀", "😱", "🔥", "😍", "🎉", "🥰", "😇", "⚡"]
 
@@ -101,7 +101,7 @@ LINK_MODE = is_enabled('LINK_MODE', True)
 TMDB_API_KEY = environ.get("TMDB_API_KEY", "6abcb6bb99fb77f33c37016a28866ed2")
 
 # Online Streaming And Download 
-STREAM_MODE = bool(environ.get('STREAM_MODE', True)) # Set True or Flase
+STREAM_MODE = bool(environ.get('STREAM_MODE', False)) # Set True or Flase
 
 MULTI_CLIENT = False
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
