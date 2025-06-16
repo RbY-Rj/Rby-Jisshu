@@ -31,8 +31,8 @@ CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHAN
 AUTH_CHANNEL = int(environ.get('AUTH_CHANNEL', '-1001780992747'))
 AUTH_REQ_CHANNEL = int(environ.get('AUTH_REQ_CHANNEL', '-1001780992747'))
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001612625783'))
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1001612625783')) 
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1001612625783'))
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1001234681274')) 
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1001234681274'))
 
 # MongoDB 
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://RbyFilter:RbyFilter@cluster0.arhxqsi.mongodb.net/?retryWrites=true&w=majority")
@@ -51,7 +51,7 @@ MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1001780992747')
 
 # Added Link Here Not Id 
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/RbyAdminBot')
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', ' https://t.me/RbyMovieRequest/302')
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/RbyMovieRequest/302')
 
 # Verification
 IS_VERIFY = is_enabled('IS_VERIFY', False)
