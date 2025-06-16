@@ -39,7 +39,7 @@ DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://RbyFilter:RbyFilter@cl
 DATABASE_NAME = environ.get('DATABASE_NAME', "RbyFilter")
 
 # Files index database url
-FILES_DATABASE = environ.get('FILES_DATABASE', "-1001522522287 -1001651501141")
+FILES_DATABASE = environ.get('FILES_DATABASE', "mongodb+srv://RbyFilter:RbyFilter@cluster0.arhxqsi.mongodb.net/?retryWrites=true&w=majority")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Other Channel's
